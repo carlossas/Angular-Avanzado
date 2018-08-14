@@ -46,10 +46,10 @@ export class RxjsComponent implements OnInit, OnDestroy {
 
       observer.next( salida );
 
-      // if ( contador === 3 ) {
-      //   clearInterval( intervalo );
-      //   observer.complete();
-      // }
+      if ( contador === 3 ) {
+        clearInterval( intervalo );
+        observer.complete();
+      }
 
       // if ( contador === 2 ) {
       //   observer.error('Auxilio!');
